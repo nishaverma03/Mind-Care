@@ -1,0 +1,81 @@
+:root{
+ --bg:#0b0b1f;
+ --card:#141433;
+ --text:#fff;
+ --accent:#ff7eb3;
+}
+body.light{
+ --bg:#fff0f5;
+ --card:#fff;
+ --text:#000;
+}
+
+body{
+margin:0;
+font-family:'Segoe UI';
+background:radial-gradient(circle,#2d1b3d,#0b0b1f);
+color:var(--text);
+transition:.4s;
+}
+
+#themeBtn{
+position:fixed;
+top:20px;
+right:20px;
+border:none;
+border-radius:50%;
+padding:10px 14px;
+font-size:18px;
+cursor:pointer;
+z-index:99;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+font-size:30px;
+}
+
+.card{
+width:80%;
+max-width:600px;
+margin:50px auto;
+padding:25px;
+border-radius:20px;
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(10px);
+box-shadow:0 0 30px rgba(0,0,0,.5);
+}
+
+textarea,input,select{
+width:100%;
+padding:10px;
+border-radius:10px;
+margin:5px 0;
+border:none;
+}
+
+button{
+padding:10px;
+border-radius:10px;
+border:none;
+background:var(--accent);
+color:white;
+cursor:pointer;
+margin:5px;
+}
+
+#breathCircle{
+width:120px;
+height:120px;
+margin:20px auto;
+border-radius:50%;
+background:linear-gradient(45deg,#ff7eb3,#65c7f7);
+transition:4s;
+}
+
+footer{text-align:center;padding:40px;opacity:.7;}
+.emergency{border:2px solid #ff4b5c;}

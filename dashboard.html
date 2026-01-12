@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MindCare Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="themeBtn">🌙</button>
+
+<section class="hero">
+<h1>MindCare</h1>
+<p>Your Mental Wellness Companion</p>
+</section>
+
+<section class="card">
+<h2>😊 Mood Journal</h2>
+<select id="mood">
+<option>Happy</option>
+<option>Sad</option>
+<option>Anxious</option>
+<option>Stressed</option>
+<option>Calm</option>
+</select>
+<textarea id="moodNote" placeholder="Write your feelings..."></textarea>
+<button onclick="saveMood()">Save</button>
+<ul id="moodList"></ul>
+</section>
+
+<section class="card">
+<h2>📊 Stress Test</h2>
+<select id="stressQ">
+<option value="1">Rarely stressed</option>
+<option value="2">Sometimes stressed</option>
+<option value="3">Often stressed</option>
+<option value="4">Always stressed</option>
+</select>
+<button onclick="calcStress()">Check</button>
+<p id="stressResult"></p>
+</section>
+
+<section class="card">
+<h2>🌬 Breathing Exercise</h2>
+<div id="breathCircle"></div>
+<button onclick="startBreathing()">Start</button>
+</section>
+
+<section class="card">
+<h2>🛌 Sleep Tracker</h2>
+<input id="sleepHrs" type="number" placeholder="Hours slept">
+<button onclick="saveSleep()">Save</button>
+<p id="sleepResult"></p>
+</section>
+
+<section class="card">
+<h2>🎧 Relaxation Sounds</h2>
+<button onclick="playSound('rain')">🌧 Rain</button>
+<button onclick="playSound('forest')">🌲 Forest</button>
+<button onclick="stopSound()">Stop</button>
+</section>
+
+<section class="card">
+<h2>📝 Therapy Notes</h2>
+<textarea id="therapyNote" placeholder="Write your private thoughts..."></textarea>
+<button onclick="saveNote()">Save</button>
+<ul id="noteList"></ul>
+</section>
+
+<section class="card">
+<h2>🔥 Mental Health Streak</h2>
+<p id="streakCount"></p>
+</section>
+
+<section class="card">
+<h2>💌 Daily Affirmation</h2>
+<p id="affirmation"></p>
+</section>
+
+<section class="card emergency">
+<h2>🚨 Emergency Help</h2>
+<p>India Helpline: 9152987821</p>
+</section>
+
+<footer>MindCare © 2026 | You matter 💗</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
